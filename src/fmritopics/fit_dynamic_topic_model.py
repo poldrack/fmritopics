@@ -87,6 +87,7 @@ def get_embeddings(sentences, overwrite=False,
                    model_name='all-MiniLM-L6-v2'):
     embedding_model = SentenceTransformer(model_name)
     if os.path.exists('data/embeddings.pkl') and not overwrite:
+        print('using existing embeddings from data/embeddings.pkl')
         with open('data/embeddings.pkl', 'rb') as f:
             embeddings = pickle.load(f)
     else:
