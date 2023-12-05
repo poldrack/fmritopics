@@ -162,7 +162,8 @@ def plot_top_topics(topics_over_time, topic_model,
                     minclust, nneighbors,
                     top_n_topics=10,
                     ntopics_to_plot=3,
-                    use_offsets=True, offset=None):
+                    use_offsets=True, offset=None,
+                    line_alpha=.5):
     # Get the top 3 topics for each year
 
     fig = topic_model.visualize_topics_over_time(topics_over_time, top_n_topics=10, 
@@ -178,10 +179,17 @@ def plot_top_topics(topics_over_time, topic_model,
     plt.figure(figsize=(10,5))
     sns.set_palette('colorblind')
     ax = sns.lineplot(x='Timestamp', y='Probability', hue='Name', 
-                    data=top_topics_over_time, legend=False)
+                    data=top_topics_over_time, legend=False,
+                    alpha=line_alpha)
     sns.despine()
+    xlims = ax.get_xlim()
+    ylims = [0, .08]
+    #plt.ylim(ylims)
 
+    # data from final year, for location of labels
     data_2022 = top_topics_over_time.query('Timestamp == "2022-01-01"')
+
+        
     delta = 200 # spacing bw data and annotation
 
     xloc = ax.get_lines()[0].get_data()[0][-1] # location of 2022 data points on x axis
@@ -206,8 +214,6 @@ def plot_top_topics(topics_over_time, topic_model,
         probability = data_2022.loc[i, 'Probability']
         # allow tweaking of location
         probability_word = probability + offset[topicnum]
-        if topicnum == 1:
-            probability_word += .0015
         plt.annotate(topicname, xy=(xloc, probability_word), 
                     xytext=(xloc + delta, probability_word), ha='left', va='center')
         plt.plot((xloc, xloc + delta), (probability, probability_word),
