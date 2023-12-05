@@ -86,6 +86,8 @@ def get_hierarchical_topics(topic_model, sentences, viz=False):
     tree = topic_model.get_topic_tree(hierarchical_topics)
     if viz:
         fig = topic_model.visualize_hierarchy()
+        if not os.path.exists('figures'):
+            os.mkdir('figures')
         fig.write_html('figures/hierarchical_topics.html')
     return hierarchical_topics, tree
 
@@ -105,6 +107,8 @@ def plot_hierarchical_topics(topic_model, embeddings, sentences,
         sentences, hierarchical_topics, 
         reduced_embeddings=reduced_embeddings)
 
+    if not os.path.exists('figures'):
+        os.mkdir('figures')
     fig.write_html(f"figures/topic_viz_minclust-{minclust}_nneighbors-{nneighbors}.html")
     reduced_embeddings_df = pd.DataFrame(reduced_embeddings, columns=['C1', 'C2'])
     if save_embeddings:
@@ -159,6 +163,8 @@ def plot_top_topics(topics_over_time, topic_model,
 
     fig = topic_model.visualize_topics_over_time(topics_over_time, top_n_topics=10, 
                                         normalize_frequency=False, width=800)
+    if not os.path.exists('figures'):
+        os.mkdir('figures')
     fig.write_html(f'figures/topics_over_time_minclust-{minclust}_nneighbors-{nneighbors}.html')
 
     # plot timeseries with annotation
@@ -205,6 +211,8 @@ def plot_top_topics(topics_over_time, topic_model,
         plt.plot((xloc, xloc + delta), (probability, probability_word),
                 color='k', alpha=0.5,linewidth=0.5)
     plt.tight_layout()
+    if not os.path.exists('figures'):
+        os.mkdir('figures')
     plt.savefig(f'figures/topics_over_time_minclust-{minclust}_nneighbors-{nneighbors}.png',
                 dpi=300)
 
