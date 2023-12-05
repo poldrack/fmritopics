@@ -20,6 +20,7 @@
 
 
 import os
+import math
 import argparse
 from bertopic import BERTopic
 import pandas as pd
@@ -95,11 +96,13 @@ def get_hierarchical_topics(topic_model, sentences, viz=False):
 def plot_hierarchical_topics(topic_model, embeddings, sentences,
                              hierarchical_topics,
                              minclust, nneighbors,
-                             save_embeddings=True):
+                             save_embeddings=True,
+                             umap_nneighbors=20):
 
     # Reduce dimensionality of embeddings, this step is optional
-    reduced_embeddings = UMAP(n_neighbors=20, n_components=2, 
-                            min_dist=0.0, metric='cosine'
+    reduced_embeddings = UMAP(n_neighbors=umap_nneighbors, 
+                              n_components=2, 
+                              min_dist=0.0, metric='cosine'
         ).fit_transform(embeddings)
 
     # Or, if you have reduced the original embeddings already:
@@ -116,6 +119,7 @@ def plot_hierarchical_topics(topic_model, embeddings, sentences,
             f"models/embedding-UMAP_minclust-{minclust}_nneighbors-{nneighbors}.csv",
             index=False)
     return fig, reduced_embeddings_df
+
 
 def get_representative_docs(model_name):
        # %%
@@ -176,9 +180,7 @@ def plot_top_topics(topics_over_time, topic_model,
     ax = sns.lineplot(x='Timestamp', y='Probability', hue='Name', 
                     data=top_topics_over_time, legend=False)
     sns.despine()
-    xlims = ax.get_xlim()
-    ylims = [0, .08]
-    #plt.ylim(ylims)
+
     data_2022 = top_topics_over_time.query('Timestamp == "2022-01-01"')
     delta = 200 # spacing bw data and annotation
 
@@ -232,6 +234,65 @@ def get_slopes(top_topics_over_time, topic_model):
     slope_df['topicname'] = [topic_model.get_topic_info(topic).Representation[0][0] for topic in slope_df.topic]
     slope_df = slope_df.sort_values('slope')
     return slope_df
+
+
+# adapted from https://maartengr.github.io/BERTopic/api/plotting/hierarchical_documents.html#bertopic.plotting._hierarchical_documents.visualize_hierarchical_documents
+def get_clustered_topics(topic_model, level_scale='linear', nr_levels=5):
+  topic_per_doc = topic_model.topics_
+
+  indices = []
+  for topic in set(topic_per_doc):
+      s = np.where(np.array(topic_per_doc) == topic)[0]
+      size = len(s) if len(s) < 100 else int(len(s))
+      indices.extend(np.random.choice(s, size=size, replace=False))
+  indices = np.array(indices)
+
+  df = pd.DataFrame({"topic": np.array(topic_per_doc)[indices]})
+  df["doc"] = [sentences[index] for index in indices]
+  df["topic"] = [topic_per_doc[index] for index in indices]
+
+
+  # Combine data
+  df["x"] = reduced_embeddings.C1
+  df["y"] = reduced_embeddings.C2
+
+  # Create topic list for each level, levels are created by calculating the distance
+  distances = hierarchical_topics.Distance.to_list()
+  if level_scale == 'log' or level_scale == 'logarithmic':
+      log_indices = np.round(np.logspace(start=math.log(1,10), stop=math.log(len(distances)-1,10), num=nr_levels)).astype(int).tolist()
+      log_indices.reverse()
+      max_distances = [distances[i] for i in log_indices]
+  elif level_scale == 'lin' or level_scale == 'linear':
+      max_distances = [distances[indices[-1]] for indices in np.array_split(range(len(hierarchical_topics)), nr_levels)][::-1]
+  else:
+      raise ValueError("level_scale needs to be one of 'log' or 'linear'")
+
+  for index, max_distance in enumerate(max_distances):
+
+      # Get topics below `max_distance`
+      mapping = {topic: topic for topic in df.topic.unique()}
+      selection = hierarchical_topics.loc[hierarchical_topics.Distance <= max_distance, :]
+      selection.Parent_ID = selection.Parent_ID.astype(int)
+      selection = selection.sort_values("Parent_ID")
+
+      for row in selection.iterrows():
+          for topic in row[1].Topics:
+              mapping[topic] = row[1].Parent_ID
+
+      # Make sure the mappings are mapped 1:1
+      mappings = [True for _ in mapping]
+      while any(mappings):
+          for i, (key, value) in enumerate(mapping.items()):
+              if value in mapping.keys() and key != value:
+                  mapping[key] = mapping[value]
+              else:
+                  mappings[i] = False
+
+      # Create new column
+      df[f"level_{index+1}"] = df.topic.map(mapping)
+      df[f"level_{index+1}"] = df[f"level_{index+1}"].astype(int)
+  return df
+
 
 
 def plot_first_year():
