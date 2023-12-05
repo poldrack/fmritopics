@@ -30,7 +30,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from sklearn.linear_model import LinearRegression
-from fit_dynamic_topic_model import load_data, get_embeddings
+from .fit_dynamic_topic_model import load_data, get_embeddings
 
 
 def load_model(min_cluster_size, n_neighbors, modeldir='models') -> BERTopic:
