@@ -243,7 +243,9 @@ def get_slopes(top_topics_over_time, topic_model):
 
 
 # adapted from https://maartengr.github.io/BERTopic/api/plotting/hierarchical_documents.html#bertopic.plotting._hierarchical_documents.visualize_hierarchical_documents
-def get_clustered_topics(topic_model, level_scale='linear', nr_levels=5):
+def get_clustered_topics(topic_model, sentences, 
+                         hierarchical_topics, reduced_embeddings, 
+                         level_scale='linear', nr_levels=5):
   topic_per_doc = topic_model.topics_
 
   indices = []

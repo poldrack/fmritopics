@@ -162,7 +162,7 @@ if __name__ == '__main__':
         ctfidf_model=ctfidf_model,  # Step 5 - Extract topic words
         representation_model=representation_model,  # Step 6 - Fine-tune topic represenations
         nr_topics=nr_topics,
-        calculate_probabilities=False
+        calculate_probabilities=True
     )
 
     topics, probs = topic_model.fit_transform(sentences)
@@ -193,7 +193,7 @@ if __name__ == '__main__':
         
         model_name += '_gpt4'
         topics, probs = topic_model.transform(sentences)
-        df = pd.DataFrame({"Document": sentences, "Topic": topics})
+        df = pd.DataFrame({"Document": sentences, "Topic": topics, 'Probs': probs})
         topic_model.save(
             os.path.join(modeldir, model_name),
             serialization='pytorch',
