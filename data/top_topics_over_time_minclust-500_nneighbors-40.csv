@@ -1,0 +1,232 @@
+,Topic,Words,Frequency,Timestamp,Sum,Probability,Year,Name
+181,0,"time, spatial, noise, component, epi",163,2002-01-01,901,0.18091009988901222,2002,EEG Connectivity and Neuroimaging
+182,1,"language, auditory, word, left, processing",125,2002-01-01,901,0.13873473917869034,2002,Neurocognitive Language Processing Studies
+183,2,"older, adult, disease, alzheimer, memory",24,2002-01-01,901,0.026637069922308545,2002,Aging Cognitive Decline Studies
+184,3,"schizophrenia, patient, schizophrenic, group, control",25,2002-01-01,901,0.02774694783573807,2002,Schizophrenia and Neural Connectivity
+185,4,"epilepsy, tumor, patient, language, seizure",53,2002-01-01,901,0.058823529411764705,2002,"Epilepsy, Language Reorganization, Surgery"
+186,5,"nicotine, alcohol, alcoholic, hiv, smoker",10,2002-01-01,901,0.011098779134295227,2002,Neural Cue-Reactivity in Addiction
+187,6,"object, visual, motion, face, stimulus",54,2002-01-01,901,0.05993340732519423,2002,Visual Perception and Recognition
+188,7,"emotional, amygdala, emotion, face, fearful",21,2002-01-01,901,0.023307436182019976,2002,Amygdala and Emotion Recognition
+189,8,"paroxetine, depression, emotional, mdd, lorazepam",6,2002-01-01,901,0.006659267480577136,2002,MDD Connectivity and Cognitive Dysfunction
+190,9,"pain, painful, stimulus, stimulation, noxious",24,2002-01-01,901,0.026637069922308545,2002,Chronic Pain Neuroimaging Studies
+192,11,"movement, motor, hand, finger, premotor",40,2002-01-01,901,0.04439511653718091,2002,Motor Cortex and Hand Movement
+209,0,"time, spatial, hemodynamic, neuronal, resolution",184,2003-01-01,1157,0.15903197925669835,2003,EEG Connectivity and Neuroimaging
+210,1,"language, auditory, word, left, speech",160,2003-01-01,1157,0.13828867761452032,2003,Neurocognitive Language Processing Studies
+211,2,"older, adult, young, aging, disease",30,2003-01-01,1157,0.02592912705272256,2003,Aging Cognitive Decline Studies
+212,3,"schizophrenia, patient, schizophrenic, healthy, control",38,2003-01-01,1157,0.032843560933448576,2003,Schizophrenia and Neural Connectivity
+213,4,"epilepsy, patient, language, seizure, surgery",64,2003-01-01,1157,0.055315471045808126,2003,"Epilepsy, Language Reorganization, Surgery"
+214,5,"cocaine, mdma, drug, alcohol, alcoholic",13,2003-01-01,1157,0.011235955056179775,2003,Neural Cue-Reactivity in Addiction
+215,6,"visual, object, face, motion, stimulus",64,2003-01-01,1157,0.055315471045808126,2003,Visual Perception and Recognition
+216,7,"emotional, emotion, amygdala, face, expression",42,2003-01-01,1157,0.036300777873811585,2003,Amygdala and Emotion Recognition
+217,8,"bipolar, depressed, disorder, patient, depression",7,2003-01-01,1157,0.006050129645635264,2003,MDD Connectivity and Cognitive Dysfunction
+218,9,"pain, painful, visceral, stimulus, ibs",21,2003-01-01,1157,0.018150388936905792,2003,Chronic Pain Neuroimaging Studies
+220,11,"movement, motor, hand, action, finger",57,2003-01-01,1157,0.049265341400172864,2003,Motor Cortex and Hand Movement
+238,0,"time, spatial, eeg, map, component",209,2004-01-01,1415,0.14770318021201415,2004,EEG Connectivity and Neuroimaging
+239,1,"auditory, word, language, left, speech",159,2004-01-01,1415,0.11236749116607773,2004,Neurocognitive Language Processing Studies
+240,2,"adult, older, age, memory, young",26,2004-01-01,1415,0.018374558303886925,2004,Aging Cognitive Decline Studies
+241,3,"schizophrenia, patient, schizophrenic, prefrontal, symptom",45,2004-01-01,1415,0.03180212014134275,2004,Schizophrenia and Neural Connectivity
+242,4,"epilepsy, patient, language, seizure, tumor",67,2004-01-01,1415,0.04734982332155477,2004,"Epilepsy, Language Reorganization, Surgery"
+243,5,"alcohol, nicotine, rat, cannabis, drug",29,2004-01-01,1415,0.02049469964664311,2004,Neural Cue-Reactivity in Addiction
+244,6,"visual, face, object, attention, stimulus",83,2004-01-01,1415,0.058657243816254416,2004,Visual Perception and Recognition
+245,7,"emotional, amygdala, emotion, expression, face",61,2004-01-01,1415,0.0431095406360424,2004,Amygdala and Emotion Recognition
+246,8,"bipolar, disorder, depressive, patient, mdd",17,2004-01-01,1415,0.012014134275618375,2004,MDD Connectivity and Cognitive Dysfunction
+247,9,"pain, stimulation, painful, nociceptive, noxious",42,2004-01-01,1415,0.029681978798586573,2004,Chronic Pain Neuroimaging Studies
+249,11,"movement, motor, hand, action, premotor",75,2004-01-01,1415,0.053003533568904596,2004,Motor Cortex and Hand Movement
+267,0,"time, spatial, noise, eeg, component",263,2005-01-01,1843,0.14270211611502984,2005,EEG Connectivity and Neuroimaging
+268,1,"word, auditory, language, left, sound",238,2005-01-01,1843,0.12913727618014106,2005,Neurocognitive Language Processing Studies
+269,2,"older, adult, alzheimer, young, mci",52,2005-01-01,1843,0.02821486706456864,2005,Aging Cognitive Decline Studies
+270,3,"schizophrenia, patient, schizophrenic, symptom, deficit",73,2005-01-01,1843,0.0396093326098752,2005,Schizophrenia and Neural Connectivity
+271,4,"epilepsy, patient, language, tumor, seizure",89,2005-01-01,1843,0.04829083016820401,2005,"Epilepsy, Language Reorganization, Surgery"
+272,5,"cocaine, alcohol, nicotine, smoking, smoker",33,2005-01-01,1843,0.017905588714053174,2005,Neural Cue-Reactivity in Addiction
+273,6,"face, visual, object, stimulus, motion",114,2005-01-01,1843,0.061855670103092786,2005,Visual Perception and Recognition
+274,7,"emotional, amygdala, face, emotion, facial",55,2005-01-01,1843,0.02984264785675529,2005,Amygdala and Emotion Recognition
+275,8,"mdd, disorder, bipolar, depressed, depression",29,2005-01-01,1843,0.015735214324470972,2005,MDD Connectivity and Cognitive Dysfunction
+276,9,"pain, painful, stimulation, hyperalgesia, stimulus",54,2005-01-01,1843,0.02930005425935974,2005,Chronic Pain Neuroimaging Studies
+278,11,"movement, motor, action, hand, premotor",75,2005-01-01,1843,0.040694519804666304,2005,Motor Cortex and Hand Movement
+296,0,"spatial, time, resolution, noise, statistical",305,2006-01-01,2143,0.14232384507699486,2006,EEG Connectivity and Neuroimaging
+297,1,"auditory, language, word, left, speech",271,2006-01-01,2143,0.12645823611759216,2006,Neurocognitive Language Processing Studies
+298,2,"older, adult, alzheimer, disease, aging",63,2006-01-01,2143,0.029398040130657957,2006,Aging Cognitive Decline Studies
+299,3,"schizophrenia, patient, control, healthy, deficit",79,2006-01-01,2143,0.036864209052729816,2006,Schizophrenia and Neural Connectivity
+300,4,"epilepsy, patient, language, seizure, epileptic",105,2006-01-01,2143,0.04899673355109659,2006,"Epilepsy, Language Reorganization, Surgery"
+301,5,"smoking, alcohol, drug, cue, nicotine",35,2006-01-01,2143,0.016332244517032198,2006,Neural Cue-Reactivity in Addiction
+302,6,"visual, face, object, motion, stimulus",121,2006-01-01,2143,0.05646290247316846,2006,Visual Perception and Recognition
+303,7,"emotional, amygdala, emotion, face, neutral",81,2006-01-01,2143,0.0377974801679888,2006,Amygdala and Emotion Recognition
+304,8,"mdd, depression, disorder, bipolar, atd",29,2006-01-01,2143,0.013532431171255249,2006,MDD Connectivity and Cognitive Dysfunction
+305,9,"pain, chronic, stimulation, noxious, painful",79,2006-01-01,2143,0.036864209052729816,2006,Chronic Pain Neuroimaging Studies
+307,11,"movement, motor, action, hand, cortex",85,2006-01-01,2143,0.03966402239850677,2006,Motor Cortex and Hand Movement
+325,0,"time, spatial, eeg, component, map",361,2007-01-01,2445,0.1476482617586912,2007,EEG Connectivity and Neuroimaging
+326,1,"auditory, word, language, left, speech",288,2007-01-01,2445,0.11779141104294479,2007,Neurocognitive Language Processing Studies
+327,2,"older, adult, aging, age, cognitive",84,2007-01-01,2445,0.0343558282208589,2007,Aging Cognitive Decline Studies
+328,3,"schizophrenia, patient, control, prefrontal, healthy",98,2007-01-01,2445,0.04008179959100205,2007,Schizophrenia and Neural Connectivity
+329,4,"epilepsy, patient, language, epileptic, seizure",103,2007-01-01,2445,0.04212678936605317,2007,"Epilepsy, Language Reorganization, Surgery"
+330,5,"alcohol, smoking, nicotine, cocaine, cue",64,2007-01-01,2445,0.026175869120654397,2007,Neural Cue-Reactivity in Addiction
+331,6,"visual, object, face, attention, stimulus",136,2007-01-01,2445,0.05562372188139059,2007,Visual Perception and Recognition
+332,7,"amygdala, emotional, emotion, face, expression",93,2007-01-01,2445,0.03803680981595092,2007,Amygdala and Emotion Recognition
+333,8,"mdd, depression, bipolar, depressive, disorder",48,2007-01-01,2445,0.0196319018404908,2007,MDD Connectivity and Cognitive Dysfunction
+334,9,"pain, chronic, stimulation, cortex, painful",76,2007-01-01,2445,0.031083844580777096,2007,Chronic Pain Neuroimaging Studies
+336,11,"movement, motor, action, hand, cortex",105,2007-01-01,2445,0.04294478527607362,2007,Motor Cortex and Hand Movement
+354,0,"spatial, time, network, eeg, map",363,2008-01-01,2539,0.14296967309964553,2008,EEG Connectivity and Neuroimaging
+355,1,"auditory, word, language, left, speech",297,2008-01-01,2539,0.11697518708152817,2008,Neurocognitive Language Processing Studies
+356,2,"older, adult, aging, memory, cognitive",91,2008-01-01,2539,0.03584088223710122,2008,Aging Cognitive Decline Studies
+357,3,"schizophrenia, patient, control, symptom, healthy",119,2008-01-01,2539,0.046868846002363136,2008,Schizophrenia and Neural Connectivity
+358,4,"epilepsy, patient, language, seizure, epileptic",99,2008-01-01,2539,0.038991729027176056,2008,"Epilepsy, Language Reorganization, Surgery"
+359,5,"alcohol, nicotine, cue, drug, craving",65,2008-01-01,2539,0.025600630169358016,2008,Neural Cue-Reactivity in Addiction
+360,6,"visual, object, face, attention, stimulus",130,2008-01-01,2539,0.05120126033871603,2008,Visual Perception and Recognition
+361,7,"amygdala, emotional, emotion, face, expression",85,2008-01-01,2539,0.03347774714454509,2008,Amygdala and Emotion Recognition
+362,8,"mdd, depression, bipolar, disorder, depressive",53,2008-01-01,2539,0.020874359984245767,2008,MDD Connectivity and Cognitive Dysfunction
+363,9,"pain, chronic, stimulus, stimulation, painful",83,2008-01-01,2539,0.03269003544702639,2008,Chronic Pain Neuroimaging Studies
+365,11,"motor, movement, action, hand, premotor",91,2008-01-01,2539,0.03584088223710122,2008,Motor Cortex and Hand Movement
+383,0,"spatial, time, eeg, network, connectivity",418,2009-01-01,2967,0.1408830468486687,2009,EEG Connectivity and Neuroimaging
+384,1,"language, auditory, word, speech, left",316,2009-01-01,2967,0.10650488709133805,2009,Neurocognitive Language Processing Studies
+385,2,"older, adult, mci, alzheimer, aging",105,2009-01-01,2967,0.03538928210313448,2009,Aging Cognitive Decline Studies
+386,3,"schizophrenia, patient, control, healthy, symptom",145,2009-01-01,2967,0.04887091338051904,2009,Schizophrenia and Neural Connectivity
+387,4,"epilepsy, patient, seizure, tumor, language",131,2009-01-01,2967,0.044152342433434445,2009,"Epilepsy, Language Reorganization, Surgery"
+388,5,"alcohol, nicotine, smoking, drug, smoker",82,2009-01-01,2967,0.027637344118638354,2009,Neural Cue-Reactivity in Addiction
+389,6,"face, visual, object, attention, stimulus",124,2009-01-01,2967,0.04179305695989215,2009,Visual Perception and Recognition
+390,7,"emotional, amygdala, emotion, expression, face",112,2009-01-01,2967,0.03774856757667678,2009,Amygdala and Emotion Recognition
+391,8,"mdd, depression, disorder, depressive, major",80,2009-01-01,2967,0.026963262554769128,2009,MDD Connectivity and Cognitive Dysfunction
+392,9,"pain, painful, placebo, chronic, stimulation",86,2009-01-01,2967,0.028985507246376812,2009,Chronic Pain Neuroimaging Studies
+394,11,"movement, motor, action, hand, parietal",95,2009-01-01,2967,0.032018874283788336,2009,Motor Cortex and Hand Movement
+412,0,"time, spatial, network, eeg, connectivity",446,2010-01-01,3413,0.13067682390858482,2010,EEG Connectivity and Neuroimaging
+413,1,"language, auditory, word, speech, left",363,2010-01-01,3413,0.106358042777615,2010,Neurocognitive Language Processing Studies
+414,2,"older, adult, alzheimer, aging, disease",125,2010-01-01,3413,0.0366246703779666,2010,Aging Cognitive Decline Studies
+415,3,"schizophrenia, patient, control, healthy, symptom",183,2010-01-01,3413,0.0536185174333431,2010,Schizophrenia and Neural Connectivity
+416,4,"epilepsy, patient, seizure, language, tumor",139,2010-01-01,3413,0.04072663346029886,2010,"Epilepsy, Language Reorganization, Surgery"
+417,5,"alcohol, smoking, drug, cocaine, cannabis",91,2010-01-01,3413,0.026662760035159685,2010,Neural Cue-Reactivity in Addiction
+418,6,"face, visual, object, stimulus, motion",146,2010-01-01,3413,0.042777615001464986,2010,Visual Perception and Recognition
+419,7,"emotional, amygdala, emotion, face, anxiety",140,2010-01-01,3413,0.04101963082332259,2010,Amygdala and Emotion Recognition
+420,8,"depression, mdd, bipolar, disorder, depressive",79,2010-01-01,3413,0.02314679167887489,2010,MDD Connectivity and Cognitive Dysfunction
+421,9,"pain, stimulation, painful, stimulus, nociceptive",99,2010-01-01,3413,0.029006738939349547,2010,Chronic Pain Neuroimaging Studies
+423,11,"motor, movement, action, hand, premotor",85,2010-01-01,3413,0.024904775857017288,2010,Motor Cortex and Hand Movement
+441,0,"network, time, spatial, connectivity, noise",521,2011-01-01,3870,0.13462532299741603,2011,EEG Connectivity and Neuroimaging
+442,1,"language, word, auditory, speech, left",370,2011-01-01,3870,0.09560723514211886,2011,Neurocognitive Language Processing Studies
+443,2,"older, adult, cognitive, aging, disease",171,2011-01-01,3870,0.044186046511627906,2011,Aging Cognitive Decline Studies
+444,3,"schizophrenia, patient, control, healthy, psychosis",196,2011-01-01,3870,0.050645994832041345,2011,Schizophrenia and Neural Connectivity
+445,4,"epilepsy, patient, seizure, language, epileptic",145,2011-01-01,3870,0.037467700258397935,2011,"Epilepsy, Language Reorganization, Surgery"
+446,5,"alcohol, smoking, nicotine, smoker, cue",124,2011-01-01,3870,0.03204134366925065,2011,Neural Cue-Reactivity in Addiction
+447,6,"face, visual, object, motion, stimulus",171,2011-01-01,3870,0.044186046511627906,2011,Visual Perception and Recognition
+448,7,"emotional, amygdala, emotion, anxiety, fear",138,2011-01-01,3870,0.03565891472868217,2011,Amygdala and Emotion Recognition
+449,8,"mdd, depression, disorder, depressive, bipolar",97,2011-01-01,3870,0.025064599483204133,2011,MDD Connectivity and Cognitive Dysfunction
+450,9,"pain, chronic, painful, nociceptive, patient",104,2011-01-01,3870,0.026873385012919897,2011,Chronic Pain Neuroimaging Studies
+452,11,"movement, motor, action, hand, premotor",97,2011-01-01,3870,0.025064599483204133,2011,Motor Cortex and Hand Movement
+470,0,"network, connectivity, time, spatial, correlation",592,2012-01-01,4425,0.1337853107344633,2012,EEG Connectivity and Neuroimaging
+471,1,"language, auditory, speech, word, processing",411,2012-01-01,4425,0.0928813559322034,2012,Neurocognitive Language Processing Studies
+472,2,"older, adult, aging, cognitive, age",207,2012-01-01,4425,0.04677966101694915,2012,Aging Cognitive Decline Studies
+473,3,"schizophrenia, patient, control, psychosis, connectivity",201,2012-01-01,4425,0.04542372881355932,2012,Schizophrenia and Neural Connectivity
+474,4,"epilepsy, patient, seizure, language, tumor",162,2012-01-01,4425,0.03661016949152542,2012,"Epilepsy, Language Reorganization, Surgery"
+475,5,"alcohol, smoking, smoker, nicotine, cue",161,2012-01-01,4425,0.03638418079096045,2012,Neural Cue-Reactivity in Addiction
+476,6,"object, visual, face, motion, stimulus",158,2012-01-01,4425,0.035706214689265534,2012,Visual Perception and Recognition
+477,7,"emotional, amygdala, emotion, anxiety, fear",160,2012-01-01,4425,0.03615819209039548,2012,Amygdala and Emotion Recognition
+478,8,"mdd, depression, bipolar, disorder, depressive",138,2012-01-01,4425,0.031186440677966103,2012,MDD Connectivity and Cognitive Dysfunction
+479,9,"pain, chronic, painful, stimulation, patient",112,2012-01-01,4425,0.025310734463276835,2012,Chronic Pain Neuroimaging Studies
+481,11,"action, motor, movement, hand, parietal",98,2012-01-01,4425,0.02214689265536723,2012,Motor Cortex and Hand Movement
+499,0,"network, connectivity, spatial, time, correlation",636,2013-01-01,4977,0.12778782399035563,2013,EEG Connectivity and Neuroimaging
+500,1,"auditory, language, word, speech, left",434,2013-01-01,4977,0.08720112517580872,2013,Neurocognitive Language Processing Studies
+501,2,"older, adult, cognitive, aging, age",200,2013-01-01,4977,0.04018485031143259,2013,Aging Cognitive Decline Studies
+502,3,"schizophrenia, patient, control, connectivity, psychosis",247,2013-01-01,4977,0.04962829013461925,2013,Schizophrenia and Neural Connectivity
+503,4,"epilepsy, patient, language, seizure, tumor",185,2013-01-01,4977,0.03717098653807514,2013,"Epilepsy, Language Reorganization, Surgery"
+504,5,"alcohol, smoking, cannabis, nicotine, drug",228,2013-01-01,4977,0.04581072935503315,2013,Neural Cue-Reactivity in Addiction
+505,6,"object, face, visual, motion, stimulus",178,2013-01-01,4977,0.03576451677717501,2013,Visual Perception and Recognition
+506,7,"emotional, emotion, amygdala, anxiety, fear",195,2013-01-01,4977,0.03918022905364678,2013,Amygdala and Emotion Recognition
+507,8,"mdd, depression, depressive, disorder, bipolar",164,2013-01-01,4977,0.032951577255374724,2013,MDD Connectivity and Cognitive Dysfunction
+508,9,"pain, chronic, painful, patient, stimulation",134,2013-01-01,4977,0.026923849708659835,2013,Chronic Pain Neuroimaging Studies
+510,11,"action, motor, movement, hand, cortex",92,2013-01-01,4977,0.01848503114325899,2013,Motor Cortex and Hand Movement
+528,0,"network, connectivity, spatial, time, correlation",616,2014-01-01,5230,0.11778202676864245,2014,EEG Connectivity and Neuroimaging
+529,1,"language, auditory, speech, word, left",442,2014-01-01,5230,0.08451242829827915,2014,Neurocognitive Language Processing Studies
+530,2,"older, adult, aging, cognitive, connectivity",255,2014-01-01,5230,0.04875717017208413,2014,Aging Cognitive Decline Studies
+531,3,"schizophrenia, patient, control, connectivity, healthy",233,2014-01-01,5230,0.044550669216061184,2014,Schizophrenia and Neural Connectivity
+532,4,"epilepsy, patient, seizure, language, tumor",198,2014-01-01,5230,0.0378585086042065,2014,"Epilepsy, Language Reorganization, Surgery"
+533,5,"alcohol, smoking, addiction, cocaine, drug",232,2014-01-01,5230,0.044359464627151055,2014,Neural Cue-Reactivity in Addiction
+534,6,"face, object, visual, stimulus, motion",177,2014-01-01,5230,0.03384321223709369,2014,Visual Perception and Recognition
+535,7,"emotional, amygdala, emotion, anxiety, fear",218,2014-01-01,5230,0.04168260038240918,2014,Amygdala and Emotion Recognition
+536,8,"mdd, depression, depressive, disorder, bipolar",176,2014-01-01,5230,0.03365200764818355,2014,MDD Connectivity and Cognitive Dysfunction
+537,9,"pain, chronic, patient, nociceptive, itch",144,2014-01-01,5230,0.027533460803059275,2014,Chronic Pain Neuroimaging Studies
+539,11,"motor, movement, action, hand, object",106,2014-01-01,5230,0.02026768642447419,2014,Motor Cortex and Hand Movement
+557,0,"network, connectivity, dynamic, spatial, time",631,2015-01-01,5414,0.11654968599926117,2015,EEG Connectivity and Neuroimaging
+558,1,"language, auditory, word, speech, processing",452,2015-01-01,5414,0.08348725526413003,2015,Neurocognitive Language Processing Studies
+559,2,"older, adult, cognitive, aging, disease",261,2015-01-01,5414,0.048208348725526415,2015,Aging Cognitive Decline Studies
+560,3,"schizophrenia, patient, control, psychosis, connectivity",274,2015-01-01,5414,0.05060953084595493,2015,Schizophrenia and Neural Connectivity
+561,4,"epilepsy, patient, seizure, language, surgery",221,2015-01-01,5414,0.040820096047284815,2015,"Epilepsy, Language Reorganization, Surgery"
+562,5,"alcohol, smoking, craving, addiction, drug",222,2015-01-01,5414,0.04100480236424086,2015,Neural Cue-Reactivity in Addiction
+563,6,"face, visual, object, scene, stimulus",188,2015-01-01,5414,0.0347247875877355,2015,Visual Perception and Recognition
+564,7,"emotion, emotional, amygdala, anxiety, fear",179,2015-01-01,5414,0.03306243073513114,2015,Amygdala and Emotion Recognition
+565,8,"mdd, depression, depressive, disorder, major",183,2015-01-01,5414,0.033801256002955304,2015,MDD Connectivity and Cognitive Dysfunction
+566,9,"pain, chronic, nociceptive, stimulation, patient",140,2015-01-01,5414,0.025858884373845585,2015,Chronic Pain Neuroimaging Studies
+568,11,"movement, motor, action, hand, premotor",107,2015-01-01,5414,0.01976357591429627,2015,Motor Cortex and Hand Movement
+586,0,"network, connectivity, time, dynamic, spatial",635,2016-01-01,5236,0.12127578304048893,2016,EEG Connectivity and Neuroimaging
+587,1,"language, auditory, word, left, processing",389,2016-01-01,5236,0.07429335370511841,2016,Neurocognitive Language Processing Studies
+588,2,"older, adult, aging, cognitive, network",266,2016-01-01,5236,0.05080213903743316,2016,Aging Cognitive Decline Studies
+589,3,"schizophrenia, patient, connectivity, control, symptom",234,2016-01-01,5236,0.044690603514132926,2016,Schizophrenia and Neural Connectivity
+590,4,"epilepsy, patient, tumor, language, seizure",218,2016-01-01,5236,0.041634835752482814,2016,"Epilepsy, Language Reorganization, Surgery"
+591,5,"alcohol, cannabis, addiction, smoking, drug",196,2016-01-01,5236,0.0374331550802139,2016,Neural Cue-Reactivity in Addiction
+592,6,"face, visual, object, stimulus, motion",162,2016-01-01,5236,0.030939648586707412,2016,Visual Perception and Recognition
+593,7,"amygdala, anxiety, emotion, emotional, threat",163,2016-01-01,5236,0.03113063407181054,2016,Amygdala and Emotion Recognition
+594,8,"mdd, depression, depressive, disorder, major",199,2016-01-01,5236,0.0380061115355233,2016,MDD Connectivity and Cognitive Dysfunction
+595,9,"pain, chronic, patient, stimulation, migraine",171,2016-01-01,5236,0.0326585179526356,2016,Chronic Pain Neuroimaging Studies
+597,11,"motor, action, movement, hand, cortex",76,2016-01-01,5236,0.014514896867838044,2016,Motor Cortex and Hand Movement
+615,0,"network, connectivity, dynamic, spatial, time",685,2017-01-01,5400,0.12685185185185185,2017,EEG Connectivity and Neuroimaging
+616,1,"language, auditory, word, left, speech",376,2017-01-01,5400,0.06962962962962962,2017,Neurocognitive Language Processing Studies
+617,2,"older, cognitive, adult, aging, age",308,2017-01-01,5400,0.05703703703703704,2017,Aging Cognitive Decline Studies
+618,3,"schizophrenia, patient, connectivity, symptom, control",223,2017-01-01,5400,0.041296296296296296,2017,Schizophrenia and Neural Connectivity
+619,4,"epilepsy, patient, language, seizure, tumor",217,2017-01-01,5400,0.040185185185185185,2017,"Epilepsy, Language Reorganization, Surgery"
+620,5,"alcohol, smoking, smoker, igd, cannabis",234,2017-01-01,5400,0.043333333333333335,2017,Neural Cue-Reactivity in Addiction
+621,6,"visual, face, object, stimulus, representation",142,2017-01-01,5400,0.026296296296296297,2017,Visual Perception and Recognition
+622,7,"emotion, amygdala, emotional, anxiety, threat",180,2017-01-01,5400,0.03333333333333333,2017,Amygdala and Emotion Recognition
+623,8,"mdd, depression, depressive, disorder, patient",191,2017-01-01,5400,0.03537037037037037,2017,MDD Connectivity and Cognitive Dysfunction
+624,9,"pain, chronic, patient, migraine, nociceptive",158,2017-01-01,5400,0.02925925925925926,2017,Chronic Pain Neuroimaging Studies
+626,11,"movement, motor, action, hand, cortex",81,2017-01-01,5400,0.015,2017,Motor Cortex and Hand Movement
+644,0,"network, connectivity, dynamic, spatial, time",695,2018-01-01,5457,0.12735935495693604,2018,EEG Connectivity and Neuroimaging
+645,1,"language, auditory, speech, word, reading",361,2018-01-01,5457,0.06615356422943008,2018,Neurocognitive Language Processing Studies
+646,2,"older, adult, cognitive, aging, age",282,2018-01-01,5457,0.05167674546454096,2018,Aging Cognitive Decline Studies
+647,3,"schizophrenia, patient, connectivity, psychosis, symptom",262,2018-01-01,5457,0.04801172805570827,2018,Schizophrenia and Neural Connectivity
+648,4,"epilepsy, patient, tumor, language, resection",177,2018-01-01,5457,0.032435404068169325,2018,"Epilepsy, Language Reorganization, Surgery"
+649,5,"alcohol, cannabis, smoking, drug, addiction",237,2018-01-01,5457,0.0434304562946674,2018,Neural Cue-Reactivity in Addiction
+650,6,"visual, object, face, scene, attention",127,2018-01-01,5457,0.023272860546087595,2018,Visual Perception and Recognition
+651,7,"emotion, emotional, anxiety, amygdala, threat",157,2018-01-01,5457,0.028770386659336632,2018,Amygdala and Emotion Recognition
+652,8,"mdd, depression, depressive, disorder, patient",217,2018-01-01,5457,0.039765438885834704,2018,MDD Connectivity and Cognitive Dysfunction
+653,9,"pain, chronic, patient, migraine, nociceptive",141,2018-01-01,5457,0.02583837273227048,2018,Chronic Pain Neuroimaging Studies
+655,11,"movement, motor, action, hand, finger",86,2018-01-01,5457,0.015759574857980574,2018,Motor Cortex and Hand Movement
+673,0,"network, connectivity, dynamic, spatial, time",644,2019-01-01,5521,0.11664553522912516,2019,EEG Connectivity and Neuroimaging
+674,1,"language, auditory, word, reading, speech",377,2019-01-01,5521,0.06828473102698786,2019,Neurocognitive Language Processing Studies
+675,2,"older, adult, cognitive, age, aging",326,2019-01-01,5521,0.059047274044557146,2019,Aging Cognitive Decline Studies
+676,3,"schizophrenia, patient, connectivity, psychosis, symptom",294,2019-01-01,5521,0.05325122260460061,2019,Schizophrenia and Neural Connectivity
+677,4,"epilepsy, patient, language, seizure, tumor",231,2019-01-01,5521,0.0418402463321862,2019,"Epilepsy, Language Reorganization, Surgery"
+678,5,"alcohol, cannabis, smoking, drug, addiction",207,2019-01-01,5521,0.0374932077522188,2019,Neural Cue-Reactivity in Addiction
+679,6,"object, visual, face, scene, category",118,2019-01-01,5521,0.021372939684839703,2019,Visual Perception and Recognition
+680,7,"emotion, emotional, anxiety, amygdala, fear",155,2019-01-01,5521,0.02807462416228944,2019,Amygdala and Emotion Recognition
+681,8,"mdd, depression, depressive, disorder, major",223,2019-01-01,5521,0.040391233472197065,2019,MDD Connectivity and Cognitive Dysfunction
+682,9,"pain, chronic, patient, migraine, painful",163,2019-01-01,5521,0.029523637022278573,2019,Chronic Pain Neuroimaging Studies
+684,11,"movement, motor, action, hand, cortex",70,2019-01-01,5521,0.012678862524904909,2019,Motor Cortex and Hand Movement
+702,0,"network, connectivity, dynamic, time, spatial",641,2020-01-01,5763,0.11122679160159639,2020,EEG Connectivity and Neuroimaging
+703,1,"language, auditory, speech, word, reading",358,2020-01-01,5763,0.062120423390595175,2020,Neurocognitive Language Processing Studies
+704,2,"older, adult, cognitive, age, aging",349,2020-01-01,5763,0.0605587367690439,2020,Aging Cognitive Decline Studies
+705,3,"schizophrenia, patient, psychosis, connectivity, symptom",279,2020-01-01,5763,0.048412285268089536,2020,Schizophrenia and Neural Connectivity
+706,4,"epilepsy, patient, seizure, language, tumor",275,2020-01-01,5763,0.04771820232517786,2020,"Epilepsy, Language Reorganization, Surgery"
+707,5,"alcohol, cannabis, addiction, smoking, substance",217,2020-01-01,5763,0.03765399965295853,2020,Neural Cue-Reactivity in Addiction
+708,6,"visual, face, object, stimulus, motion",104,2020-01-01,5763,0.018046156515703626,2020,Visual Perception and Recognition
+709,7,"emotion, emotional, amygdala, anxiety, fear",185,2020-01-01,5763,0.032101336109665105,2020,Amygdala and Emotion Recognition
+710,8,"mdd, depression, depressive, disorder, major",226,2020-01-01,5763,0.0392156862745098,2020,MDD Connectivity and Cognitive Dysfunction
+711,9,"pain, chronic, patient, intensity, connectivity",180,2020-01-01,5763,0.031233732431025507,2020,Chronic Pain Neuroimaging Studies
+713,11,"motor, movement, action, hand, finger",74,2020-01-01,5763,0.012840534443866042,2020,Motor Cortex and Hand Movement
+731,0,"network, connectivity, dynamic, spatial, time",664,2021-01-01,6146,0.1080377481288643,2021,EEG Connectivity and Neuroimaging
+732,1,"language, auditory, speech, word, semantic",401,2021-01-01,6146,0.06524568825252197,2021,Neurocognitive Language Processing Studies
+733,2,"older, cognitive, adult, disease, aging",404,2021-01-01,6146,0.06573381060852587,2021,Aging Cognitive Decline Studies
+734,3,"schizophrenia, patient, psychosis, connectivity, symptom",272,2021-01-01,6146,0.044256426944354055,2021,Schizophrenia and Neural Connectivity
+735,4,"epilepsy, patient, language, seizure, tumor",272,2021-01-01,6146,0.044256426944354055,2021,"Epilepsy, Language Reorganization, Surgery"
+736,5,"alcohol, smoking, aud, cannabis, craving",280,2021-01-01,6146,0.04555808656036447,2021,Neural Cue-Reactivity in Addiction
+737,6,"face, object, visual, scene, attention",122,2021-01-01,6146,0.019850309144158803,2021,Visual Perception and Recognition
+738,7,"emotion, emotional, amygdala, fear, anxiety",149,2021-01-01,6146,0.024243410348193946,2021,Amygdala and Emotion Recognition
+739,8,"mdd, depression, depressive, disorder, patient",272,2021-01-01,6146,0.044256426944354055,2021,MDD Connectivity and Cognitive Dysfunction
+740,9,"pain, chronic, patient, migraine, stimulation",210,2021-01-01,6146,0.03416856492027335,2021,Chronic Pain Neuroimaging Studies
+742,11,"motor, movement, action, hand, cortex",70,2021-01-01,6146,0.011389521640091117,2021,Motor Cortex and Hand Movement
+760,0,"network, connectivity, dynamic, spatial, time",602,2022-01-01,5732,0.10502442428471738,2022,EEG Connectivity and Neuroimaging
+761,1,"language, auditory, speech, word, reading",335,2022-01-01,5732,0.058443824145150036,2022,Neurocognitive Language Processing Studies
+762,2,"older, cognitive, adult, aging, age",367,2022-01-01,5732,0.06402651779483601,2022,Aging Cognitive Decline Studies
+763,3,"schizophrenia, patient, psychosis, connectivity, symptom",242,2022-01-01,5732,0.042219120725750174,2022,Schizophrenia and Neural Connectivity
+764,4,"epilepsy, patient, language, tumor, seizure",234,2022-01-01,5732,0.04082344731332868,2022,"Epilepsy, Language Reorganization, Surgery"
+765,5,"alcohol, aud, addiction, cannabis, craving",238,2022-01-01,5732,0.04152128401953943,2022,Neural Cue-Reactivity in Addiction
+766,6,"face, visual, object, stimulus, attention",104,2022-01-01,5732,0.018143754361479414,2022,Visual Perception and Recognition
+767,7,"emotion, emotional, anxiety, amygdala, threat",165,2022-01-01,5732,0.0287857641311933,2022,Amygdala and Emotion Recognition
+768,8,"mdd, depression, depressive, disorder, major",291,2022-01-01,5732,0.05076762037683182,2022,MDD Connectivity and Cognitive Dysfunction
+769,9,"pain, chronic, patient, migraine, cortex",246,2022-01-01,5732,0.042916957431960924,2022,Chronic Pain Neuroimaging Studies
+771,11,"action, motor, movement, hand, learning",56,2022-01-01,5732,0.009769713886950453,2022,Motor Cortex and Hand Movement
