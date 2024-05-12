@@ -33,6 +33,7 @@ from bertopic.vectorizers import ClassTfidfTransformer
 import argparse
 import openai
 import pandas as pd
+import numpy as np
 
 def load_data(datadir='data', minyear=1990, maxyear=2023, verbose=False) -> (list, list):
     """
@@ -84,8 +85,9 @@ def load_data(datadir='data', minyear=1990, maxyear=2023, verbose=False) -> (lis
 
 
 def get_embeddings(sentences, overwrite=False,
-                   model_name='all-MiniLM-L6-v2'):
-    embedding_model = SentenceTransformer(model_name)
+                   model_name='all-mpnet-base-v2', # 'all-MiniLM-L6-v2',
+                   device=None):
+    embedding_model = SentenceTransformer(model_name, device=None)
     if os.path.exists('data/embeddings.pkl') and not overwrite:
         print('using existing embeddings from data/embeddings.pkl')
         with open('data/embeddings.pkl', 'rb') as f:
@@ -104,8 +106,9 @@ if __name__ == '__main__':
     argparser.add_argument('--n_neighbors', type=int, default=15)
     argparser.add_argument('--year', type=int, default=None)
     argparser.add_argument('--reduce_topics', action='store_true')
-    argparser.add_argument('--use_gpt4', action='store_true')
+    argparser.add_argument('--llm', type=str, default=None)
     argparser.add_argument('--overwrite', action='store_true')
+    argparser.add_argument('--device', type=str, default=None)
     args = argparser.parse_args()
 
 
@@ -121,7 +124,9 @@ if __name__ == '__main__':
     sentences, years = load_data(minyear=1990, maxyear=2023)
 
     # Step 1 - Extract embeddings
-    embeddings, embedding_model = get_embeddings(sentences)
+    embeddings, embedding_model = get_embeddings(sentences, 
+                                                 overwrite=args.overwrite,
+                                                 device=args.device)
 
     # Step 2 - Reduce dimensionality
     # ala https://maartengr.github.io/BERTopic/faq.html#i-have-too-many-topics-how-do-i-decrease-them
@@ -180,20 +185,39 @@ if __name__ == '__main__':
     rep_docs = topic_model.get_representative_docs()
     pd.DataFrame(rep_docs).to_csv(os.path.join(modeldir, model_name + '_rep_docs.csv'))
 
-    if args.use_gpt4:
-        # now run with GPT-4 representatoin model
-        with open('openai_api_key.txt', 'r') as f:
-            openai.api_key = f.read().strip()
+    if args.llm is not None:
+        # use custom prompt that calls for a shorter summary
+        prompt = """
+I have a topic that contains the following documents:
+[DOCUMENTS]
+The topic is described by the following keywords: [KEYWORDS]
 
+Based on the information above, extract a short topic label of four words or less in the following format:
+topic: <topic label>
+"""
+        
+        if args.llm == 'gpt4':
+            with open('openai_api_key.txt', 'r') as f:
+                api_key = f.read().strip()
+            openai_client = openai.Client(api_key=api_key)
+        elif args.llm == 'llama3':
+            openai_client = openai.OpenAI(base_url="http://localhost:1234/v1", api_key=api_key)
+
+        llmnames = {'gpt4': 'gpt-4', 
+                    'llama3': 'lmstudio-community/Meta-Llama-3-70B-Instruct-GGUF'}
+        llmname = llmnames[args.llm]
         representation_model = OpenAI(
-            model='gpt-4', chat=True, exponential_backoff=True
+            client=openai_client,
+            model=llmname, chat=True, exponential_backoff=True,
+            prompt=prompt
         )
 
         topic_model.update_topics(sentences, representation_model=representation_model)
         
-        model_name += '_gpt4'
+        model_name += f'_{llmname}' 
         topics, probs = topic_model.transform(sentences)
-        df = pd.DataFrame({"Document": sentences, "Topic": topics, 'Probs': probs})
+        np.save(os.path.join(modeldir, model_name + '_probs.npy'), probs)
+        df = pd.DataFrame({"Document": sentences, "Topic": topics}) # , 'Probs': probs})
         topic_model.save(
             os.path.join(modeldir, model_name),
             serialization='pytorch',
