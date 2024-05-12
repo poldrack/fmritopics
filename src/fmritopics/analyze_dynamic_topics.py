@@ -34,7 +34,8 @@ from sklearn.linear_model import LinearRegression
 from .fit_dynamic_topic_model import load_data, get_embeddings
 
 
-def load_model(min_cluster_size, n_neighbors, modeldir='models') -> BERTopic:
+def load_model(min_cluster_size, n_neighbors, modeldir='models', 
+               llm='gpt4', embedding='all-mpnet-base-v2') -> BERTopic:
     """
     Load model from pickle file
 
@@ -54,13 +55,13 @@ def load_model(min_cluster_size, n_neighbors, modeldir='models') -> BERTopic:
 
     """
 
-    model_name = f'model-bertopic_minclust-{min_cluster_size}_nneighbors-{n_neighbors}_gpt4'
+    model_name = f'model-bertopic_minclust-{min_cluster_size}_nneighbors-{n_neighbors}_{llm}'
 
     model_path = os.path.join(modeldir, model_name)
     if not os.path.exists(model_path):
         raise FileNotFoundError(f'Model {model_path} not found')
 
-    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    embedding_model = SentenceTransformer(embedding)
     topic_model = BERTopic.load(model_path, embedding_model=embedding_model)
     print('Loaded model from %s' % os.path.join(model_path, model_name))
     return topic_model, embedding_model, model_name
@@ -121,9 +122,9 @@ def plot_hierarchical_topics(topic_model, embeddings, sentences,
     return fig, reduced_embeddings_df
 
 
-def get_representative_docs(model_name):
+def get_representative_docs(model_name, llm='gpt4'):
        # %%
-    representative_docs = pd.read_csv(f'models/{model_name}'.replace('_gpt4', '_rep_docs.csv'))
+    representative_docs = pd.read_csv(f'models/{model_name}'.replace('_{llm}', '_rep_docs.csv'))
     return representative_docs
 
 
